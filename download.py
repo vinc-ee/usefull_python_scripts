@@ -8,7 +8,7 @@ def download(url):
         out_file.write("this is a test")
 
 def send_mail(email, password, message):
-    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server = smtplib.SMTP("smtp.mail.com", 587)
     server.starttls()
     server.login(email, password)
     server.sendmail(email, email, message)
