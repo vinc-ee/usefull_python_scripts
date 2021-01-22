@@ -4,7 +4,7 @@ import requests
 
 target_url = "example.com"
 
-with open("/root/Downloads/common.txt", "r") as wordlist_file:
+with open("/username/Downloads/common.txt", "r") as wordlist_file:
     for line in wordlist_file:
         word = line.strip()
         test_url = target_url + "/" + word
